@@ -41,37 +41,4 @@
       background-color: rgba(0, 0, 0, 0.6);
     }
     .left {
-      left: 20px;
-    }
-    .right {
-      right: 20px;
-    }
-  </style>
-</head>
-<body>
-  <div class="slideshow-container">
-    <img id="slide" src="https://i.imgur.com/qOnSDWe.jpg" alt="Slide 1" />
-    <button onclick="prevSlide()" class="nav-button left">⟵</button>
-    <button onclick="nextSlide()" class="nav-button right">⟶</button>
-  </div>
-
-  <script>
-    const slides = [
-      "https://i.imgur.com/qOnSDWe.jpg",
-      "https://i.imgur.com/ktsTh2o.jpg"
-    ];
-    let currentSlide = 0;
-    function showSlide(index) {
-      document.getElementById("slide").src = slides[index];
-    }
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-      showSlide(currentSlide);
-    }
-  </script>
-</body>
-</html>
+      left: 20
